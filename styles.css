@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+body { 
+    background: rgb(24, 24, 24);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+}
+
+.campo, button {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    color: #525252;
+    font-size: 15px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: #3f989e;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+button:hover {
+    background: #236b70;
+}
+
+.mensagem {
+    color: #9ec7ca;
+    height: 20px;
+    font-size: 12px;
+    margin-top: 6px;
+    transition: 0.5s;
+}
+
+#content {
+    transition: 0.5s;
+}
+
+#resultado-msg {
+    position: fixed;
+    right: 0; left: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 130px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#resultado-msg #close {
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
